@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/Fifth_Demo">
+        <file>images/Back.png</file>
+        <file>images/LogIn.png</file>
+    </qresource>
+</RCC>
