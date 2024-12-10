@@ -30,7 +30,7 @@ private slots:
     void GoToDoctorView();
     void GoToDepartmentView();
     void GoToPatientView();
-    void GoToPatientEditView();
+    void GoToPatientEditView(int row_index);
     void do_Btn_Back_Clicked();
     void do_stackedWidget_CurrentChanged(int arg1);
     void do_Btn_Logout_Clicked();

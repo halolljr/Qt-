@@ -77,10 +77,11 @@ void Fifth_Demo::GoToPatientView()
 	connect(patientview_, &PatientView::P_GoPatientEditView, this, &Fifth_Demo::GoToPatientEditView);
 }
 
-void Fifth_Demo::GoToPatientEditView()
+void Fifth_Demo::GoToPatientEditView(int row_index)
 {
-	patient_edit_view_ = new Patient_Edit_View(this);
+	patient_edit_view_ = new Patient_Edit_View(this,row_index);
 	push_Widget(patient_edit_view_);
+	connect(patient_edit_view_, &Patient_Edit_View::GoToPrevious, this, &Fifth_Demo::GoToPreviousView);
 }
 
 void Fifth_Demo::do_Btn_Back_Clicked()

@@ -21,7 +21,7 @@ private slots:
 	void do_Btn_Delete_Clicked();
 	void do_Btn_Modify_Clicked();
 signals:
-	void  P_GoPatientEditView();
+	void  P_GoPatientEditView(int row_index);
 private:
 	Ui::PatientViewClass *ui;
 };
